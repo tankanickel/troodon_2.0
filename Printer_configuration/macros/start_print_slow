@@ -1,0 +1,26 @@
+M98 P"/macros/switch_stealthchop.g"
+
+M140 S{param.B}     ; set bed temperature and continue
+M190 S{param.B}     ; wait for bed temperature to reach 
+
+if move.axes[0].homed && move.axes[1].homed && move.axes[2].homed         ; check whether X, Y or Z drivers are active  
+else
+  M104 S150   ; set hot end temperature and continue
+  M109 R150   ; wait for hot end temperature to reach set point
+  G32
+
+M104 S{param.A}   ; set hot end temperature and continue
+M109 S{param.A}   ; wait for hot end temperature to reach set point
+M98 P"Nozzle-clean.g"
+M98 P"Nozzle-clean.g"
+G92 E0
+G1 E-10 F1800
+G1 X10 Y10 F3000
+G92 E0
+G1 E10 F540
+G92 E0
+G1 E-0.30000 F3600
+G1 Z0.2500 F1000
+G1 X200 Y10 E43.5631 F1000
+G92 E0
+G1 E-0.30000 F5400

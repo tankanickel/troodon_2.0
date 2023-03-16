@@ -1,0 +1,33 @@
+// This board.txt file has come from the teamgloomy wiki
+// version: 1.1
+board = troodon_v2
+
+//LED blinks to indicate Platform is spinning or other diagnostic 
+leds.diagnostic = LED
+
+heat.tempSensePins = {PA_0, PF_3}
+
+//ESP Settings
+8266wifi.espDataReadyPin = PD_0
+8266wifi.TfrReadyPin = PD_3
+8266wifi.espResetPin = PG_14
+8266wifi.csPin = PA_15
+//ESP RX/TX Settings
+8266wifi.serialRxTxPins = { PD_6, PD_5 }
+8266wifi.spiChannel = 2
+
+// External Display settings
+serial.aux.rxTxPins = {NoPin, NoPin};
+
+//MINI 12864
+lcd.encoderPinA = BTNEN1
+lcd.encoderPinB = BTNEN2
+lcd.encoderPinSw = BTNENC
+lcd.lcdCSPin = LCDEN
+lcd.lcdDCPin = LCDRS
+lcd.spiChannel = 1
+lcd.lcdBeepPin = BEEP
+sdCard.external.spiChannel = 1
+sdCard.external.csPin = LCDSS
+sdCard.external.cardDetectPin = LCDCD
+led.neopixelPin = LCDD5
