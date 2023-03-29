@@ -1,0 +1,22 @@
+{
+    "header": {
+        "filament_id": "5b6a322f-93ed-42a0-82c9-aecfbaf59f33",
+        "filament_name": "Troodon PLA"
+    },
+    "override_slice_settings": false,
+    "settings": {
+        "filament_brand": "",
+        "filament_density": 1240,
+        "filament_diameter": 1.75,
+        "filament_display_name": "Troodon PLA",
+        "filament_flowrate": 90,
+        "filament_gcode_end": "M98 P\"/macros/end_print_slow\"",
+        "filament_gcode_start": "M190 S0 ; Prevents prusaslicer from prepending m190 to the gcode ruining our macro\nM109 S0 ; Prevents prusaslicer from prepending m109 to the gcode ruining our macro\nM98 P\"/macros/start_print_slow\" A{temperature_extruder1} B{temperature_heatbed}\nG29 S1 P\"smooth.csv\"\nM572 S0.04",
+        "filament_name_abbreviation": "PLA",
+        "filament_notes": "",
+        "filament_price": 30
+    },
+    "slice_settings": {
+    },
+    "version": 1
+}

@@ -1,0 +1,22 @@
+{
+    "header": {
+        "filament_id": "3d09541a-ec67-476b-bb65-5a36c6b1f9a0",
+        "filament_name": "Troodon PETG Red Transparent"
+    },
+    "override_slice_settings": false,
+    "settings": {
+        "filament_brand": "",
+        "filament_density": 1240,
+        "filament_diameter": 1.75,
+        "filament_display_name": "Troodon Eryone PETG",
+        "filament_flowrate": 103,
+        "filament_gcode_end": "M98 P\"/macros/end_print_slow\"",
+        "filament_gcode_start": "M190 S0 ; Prevents prusaslicer from prepending m190 to the gcode ruining our macro\nM109 S0 ; Prevents prusaslicer from prepending m109 to the gcode ruining our macro\nG29 S1 P\"textured.csv\"\nM572 S0.045\nM98 P\"/macros/start_print_slow\" A{temperature_extruder1} B{temperature_heatbed}",
+        "filament_name_abbreviation": "PETG",
+        "filament_notes": "",
+        "filament_price": 30
+    },
+    "slice_settings": {
+    },
+    "version": 1
+}
