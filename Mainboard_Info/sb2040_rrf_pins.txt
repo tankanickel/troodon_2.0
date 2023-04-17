@@ -1,0 +1,30 @@
+	{ PwmOutput::pwm0a,	AdcInput::none,		nullptr		},	// GPIO0 SPI1 SCK
+	{ PwmOutput::pwm0b,	AdcInput::none,		nullptr		},	// GPIO1 SPI1 CS
+	{ PwmOutput::pwm1a,	AdcInput::none,		nullptr		},	// GPIO2 SPI1 MISO
+	{ PwmOutput::pwm1b,	AdcInput::none,		nullptr		},	// GPIO3 SPI1 MOSI
+	{ PwmOutput::pwm2a,	AdcInput::none,		nullptr		},	// GPIO4 CAN RX
+	{ PwmOutput::pwm2b,	AdcInput::none,		nullptr		},	// GPIO5 CAN TX
+	{ PwmOutput::pwm3a,	AdcInput::none,		"out0"		},	// GPIO6 HEAT0
+	{ PwmOutput::pwm3b,	AdcInput::none,		nullptr		},	// GPIO7 EN
+	{ PwmOutput::pwm4a,	AdcInput::none,		nullptr		},	// GPIO8 UART
+	{ PwmOutput::pwm4b,	AdcInput::none,		nullptr		},	// GPIO9 STEP
+	{ PwmOutput::pwm5a,	AdcInput::none,		nullptr		},	// GPIO10 DIR
+	{ PwmOutput::pwm5b,	AdcInput::none,		nullptr		},	// GPIO11 NOT CONNECTED
+	{ PwmOutput::pwm6a,	AdcInput::none,		"rgbled" 	},	// GPIO12 RGB
+	{ PwmOutput::pwm6b,	AdcInput::none,		"out1" 		},	// GPIO13 FAN0
+	{ PwmOutput::pwm7a,	AdcInput::none,		"out2"		},	// GPIO14 FAN1
+	{ PwmOutput::pwm7b,	AdcInput::none,		"out3"		},	// GPIO15 FAN2
+	{ PwmOutput::pwm0a,	AdcInput::none,		"out0.pwm"	},	// GPIO16 FAN0 PWM
+	{ PwmOutput::pwm0b,	AdcInput::none,		"out1.pwm"	},	// GPIO17 FAN1 PWM
+	{ PwmOutput::pwm1a,	AdcInput::none,		nullptr 	},	// GPIO18 NOT CONNECTED
+	{ PwmOutput::pwm1b,	AdcInput::none,		nullptr		},	// GPIO19 NOT CONNECTED
+	{ PwmOutput::pwm2a,	AdcInput::none,		nullptr		},	// GPIO20 ADXL INT1
+	{ PwmOutput::pwm2b,	AdcInput::none,		nullptr		},	// GPIO21 ADXL INT2
+	{ PwmOutput::pwm3a,	AdcInput::none,		nullptr		},	// GPIO22 NOT CONNECTED
+	{ PwmOutput::none,	AdcInput::none,		nullptr		},	// GPIO23 NOT CONNECTED
+	{ PwmOutput::none,	AdcInput::none,		nullptr		},	// GPIO24 STATUS LED
+	{ PwmOutput::none,	AdcInput::none,		"io2.in"	},	// GPIO25 ENDSTOP2
+	{ PwmOutput::pwm5a,	AdcInput::adc0_0,	"temp1"		},	// GPIO26 CHAMBER_TEMP
+	{ PwmOutput::pwm5b,	AdcInput::adc0_1,	"temp0"		},	// GPIO27 T0_TEMP
+	{ PwmOutput::pwm6a,	AdcInput::adc0_2,	"io0.in"	},	// GPIO28 ENDSTOP0
+	{ PwmOutput::none,	AdcInput::adc0_3,	"io1.in"	},	// GPIO29 ENDSTOP1

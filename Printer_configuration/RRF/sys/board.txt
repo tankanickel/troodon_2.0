@@ -19,13 +19,25 @@ heat.tempSensePins = {PA_0, PF_3}
 // External Display settings
 serial.aux.rxTxPins = {NoPin, NoPin};
 
+//Can
+can.spiChannel = 0
+can.csPin = PC_4
+
+//Remove the extruder motor to use CAN-FD
+stepper.enablePins = {A.1, C.1, NoPin, E.10, E.15, F.12, G.1, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin}
+stepper.stepPins = {A.3, C.2, NoPin, E.11, B.10, F.13, E.7, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin}
+stepper.directionPins = {A.4, C.3, NoPin, E.12, B.11, F.14, E.8, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin}
+stepper.TmcUartPins = {A.2, C.0, NoPin, E.9, E.14, F.11, G.0, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin}
+
 //MINI 12864
+SPI3.pins = {B.13, B.14, B.15}
 lcd.encoderPinA = BTNEN1
 lcd.encoderPinB = BTNEN2
 lcd.encoderPinSw = BTNENC
 lcd.lcdCSPin = LCDEN
 lcd.lcdDCPin = LCDRS
-lcd.spiChannel = 1
+//lcd.spiChannel = 1
+lcd.spiChannel = 3
 lcd.lcdBeepPin = BEEP
 sdCard.external.spiChannel = 1
 sdCard.external.csPin = LCDSS
