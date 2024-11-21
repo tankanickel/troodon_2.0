@@ -1,5 +1,5 @@
 # Troodon 2.0
-Newest mod to klipper with built-in raspberry pi 4, a Fly SB2040 v1 Canbus Toolhead and still runnning Voron Tap
+Newest mod to klipper with built-in raspberry pi 4, BTT HDMI5 display, a Fly SB2040 v1 Canbus PCB with stealthburner toolhead and still runnning Voron Tap
 
 Currently still in calibration and WIP
 
